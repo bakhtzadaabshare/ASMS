@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="MainWindow" accessibleRole="IMAGE_VIEW" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="1218.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstscenebuilderapplication.FXMLDocumentController">
+    <stylesheets>
+        <URL value="@Style/mainwindow.css" />
+    </stylesheets>
+    <children>
+      <BorderPane layoutX="146.0" layoutY="77.0" prefHeight="665.0" prefWidth="1218.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="25.0" prefWidth="1218.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="schoolName" contentDisplay="TOP" layoutX="424.0" layoutY="1.0" prefHeight="36.0" prefWidth="1218.0" style="-fx-text-fill: #000000; -fx-font-size: 30px; -fx-font-family: sans-serif; -fx-alignment: center;" text="Salman Public School Guldhery" textAlignment="CENTER" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="1.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <VBox prefHeight="665.0" prefWidth="187.0" spacing="2.0" style="-fx-background-color: rgb(60, 60, 60);" BorderPane.alignment="CENTER">
+               <effect>
+                  <DropShadow height="0.0" radius="4.75" />
+               </effect>
+               <padding>
+                  <Insets top="0.0" />
+               </padding>
+               <children>
+                  <Pane prefHeight="126.0" prefWidth="187.0">
+                     <children>
+                        <ImageView fitHeight="130.0" fitWidth="121.0" layoutX="33.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/icons8_male_user_96px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Text fx:id="user_name" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20px;" textAlignment="CENTER" wrappingWidth="186.99996682446545" />
+                  <Label prefHeight="32.0" prefWidth="187.0" style="-fx-font-size: 20px; -fx-alignment: Center; -fx-font-family: sans-serif; -fx-text-fill: rgb(60, 179, 113); -fx-font-weight: bold;" text="Loged In" textAlignment="CENTER" />
+                  <Button fx:id="dashboard_btn" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="194.0" text="Dashboard">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/dashboard.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="home_btn" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="194.0" text="Home ">
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="student_info" mnemonicParsing="false" onAction="#openStudentInfo" prefHeight="47.0" prefWidth="194.0" text="Student Info">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/student.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="classes_info" mnemonicParsing="false" onAction="#openClassInfo" prefHeight="47.0" prefWidth="194.0" text="Classes Info">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/classroom.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="fee_detials" mnemonicParsing="false" onAction="#openFeeDetials" prefHeight="47.0" prefWidth="194.0" text="Fee Detials">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/fee.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="staff_detials" mnemonicParsing="false" onAction="#openTeacherDetail" prefHeight="47.0" prefWidth="194.0" text="Staff Details">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/staff.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="examination" mnemonicParsing="false" onAction="#openVeiwTeacherSalary" prefHeight="47.0" prefWidth="194.0" text="Teacher Salary">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/give_salary.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="paid_and_unpaid_fee" mnemonicParsing="false" onAction="#openUnpaidFee" prefHeight="47.0" prefWidth="195.0" text="Paid &amp; Unpaid Fee">
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/view_fee.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="setting" layoutX="10.0" layoutY="542.0" mnemonicParsing="false" onAction="#openSetting" prefHeight="47.0" prefWidth="195.0" text=" Setting">
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/icons8_settings_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <GridPane hgap="20.0" vgap="20.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="190.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="190.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.0" minWidth="10.0" prefWidth="190.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.0" minWidth="10.0" prefWidth="190.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="0.0" prefWidth="0.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="136.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="500.0" minHeight="144.0" prefHeight="144.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="420.0" minHeight="10.0" prefHeight="420.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="420.0" minHeight="10.0" prefHeight="420.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="26.0" minHeight="1.0" prefHeight="1.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <BarChart fx:id="total_fee_details" prefHeight="422.0" prefWidth="696.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="2">
+                    <xAxis>
+                      <CategoryAxis label="Months" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis label="Total Students" side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <Pane prefHeight="134.0" prefWidth="187.0" style="-fx-background-color: rgb(61, 189, 175);" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="68.0" fitWidth="61.0" layoutX="85.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/femalestudents.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="57.0" layoutY="75.0" prefHeight="19.0" prefWidth="117.0" style="-fx-font-size: 15px; -fx-text-fill: white; -fx-font-weight: bold;" text="Female Sutdents" />
+                        <Text fx:id="female_students" fill="WHITE" layoutX="22.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" textAlignment="CENTER" wrappingWidth="186.9999851394823" />
+                     </children>
+                  </Pane>
+                  <Pane id="total_students" prefHeight="134.0" prefWidth="187.0" style="-fx-background-color: rgb(255, 163, 104);" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="61.0" fitWidth="82.0" layoutX="89.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/studentsno.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="65.0" layoutY="79.0" prefHeight="18.0" prefWidth="109.0" style="-fx-font-size: 15px; -fx-text-fill: white; -fx-font-weight: bold;" text="Total Students" />
+                        <Text fx:id="total_students" fill="WHITE" layoutX="26.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" textAlignment="CENTER" wrappingWidth="186.9999851394823" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="134.0" prefWidth="187.0" style="-fx-background-color: #ff0084;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="83.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/malestudents.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="61.0" layoutY="66.0" prefHeight="19.0" prefWidth="104.0" style="-fx-font-size: 15px; -fx-text-fill: white; -fx-font-weight: bold;" text="Male Students" />
+                        <Text fx:id="male_students" fill="WHITE" layoutX="20.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" textAlignment="CENTER" wrappingWidth="186.9999851394823" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="134.0" prefWidth="187.0" style="-fx-background-color: #A637Ea;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="61.0" fitWidth="82.0" layoutX="70.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/staff.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="63.0" layoutY="79.0" prefHeight="19.0" prefWidth="76.0" style="-fx-font-size: 15px; -fx-text-fill: white; -fx-font-weight: bold;" text="Total Staff" />
+                        <Text fx:id="total_stuff" fill="WHITE" layoutX="8.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" textAlignment="CENTER" wrappingWidth="186.9999851394823" />
+                     </children>
+                  </Pane>
+                  <PieChart fx:id="Salary_PieChart" labelsVisible="false" legendVisible="false" prefHeight="205.0" prefWidth="218.0" title="Paid and Unpaid Salary" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </PieChart>
+                  <PieChart fx:id="Fee_pieChart" labelsVisible="false" legendSide="RIGHT" legendVisible="false" prefHeight="206.0" prefWidth="215.0" title="Paid and Unpaid Fee" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </PieChart>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+      <AnchorPane fx:id="HomeWindow" layoutX="200.0" layoutY="37.0" prefHeight="619.0" prefWidth="1015.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="44.0">
+         <children>
+            <GridPane hgap="5.0" prefHeight="619.0" prefWidth="1022.0" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="34.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="121.0" minHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="173.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="insert_std_record_btn" mnemonicParsing="false" onAction="#openStudentRecordForm" prefHeight="100.0" prefWidth="300.0" style="-fx-font-size: 15px; -fx-background-radius: 100 0  0 0; -fx-border-radius: 100 0 0 0; -fx-border-color: rgb(225, 64, 91); -fx-border-width: 3;" text="Admission" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fitHeight="68.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/enter_student.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="veiew_std_record_btn" mnemonicParsing="false" onAction="#openPromotion" prefHeight="100.0" prefWidth="300.0" style="-fx-font-size: 15px; -fx-background-radius: 0; -fx-border-color: rgb(225, 64, 91); -fx-border-width: 3;" text="Promotion" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <graphic>
+                        <ImageView fitHeight="68.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/icons8_up_3_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(225, 64, 91);" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.rowSpan="2">
+                     <children>
+                        <Text layoutX="1.0" layoutY="109.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Admission Details" />
+                     </children>
+                  </Pane>
+                  <Button fx:id="insert_teacher_record_btn" mnemonicParsing="false" onAction="#openTeacherRecordForm" prefHeight="100.0" prefWidth="300.0" style="-fx-font-size: 15px; -fx-background-radius: 0; -fx-border-color: rgb(216, 130, 32); -fx-border-width: 3;" text="Insert Record" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <graphic>
+                        <ImageView fitHeight="74.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/add_teacher.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="veiw_teacher_record_btn" mnemonicParsing="false" onAction="#openPayTeacherSalary" prefHeight="100.0" prefWidth="300.0" style="-fx-font-size: 15px; -fx-background-radius: 0 0 0 100; -fx-border-color: rgb(216, 130, 32); -fx-border-width: 3; -fx-border-radius: 0 0 0 100;" text="Give Salary" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <graphic>
+                        <ImageView fitHeight="68.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/give_salary.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(216, 130, 32);" GridPane.columnIndex="2" GridPane.rowIndex="4" GridPane.rowSpan="2">
+                     <children>
+                        <Text layoutX="21.0" layoutY="109.0" rotate="270.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Salary Details" />
+                     </children>
+                  </Pane>
+                  <Button fx:id="enter_fee_btn" mnemonicParsing="false" onAction="#openPromotionFee" prefHeight="100.0" prefWidth="300.0" style="-fx-font-size: 15px; -fx-background-radius: 0 100 0 0; -fx-border-color: rgb(58, 222, 204); -fx-border-radius: 0 100 0 0; -fx-border-width: 3;" text="Pay Pro Fee" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fitHeight="68.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/view_fee.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#openEnterFee" prefHeight="100.0" prefWidth="300.0" style="-fx-font-size: 15px; -fx-background-radius: 0; -fx-border-color: rgb(58, 222, 204); -fx-border-width: 3;" text="Pay Mon Pay" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <graphic>
+                        <ImageView fitHeight="68.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/icons8_expensive_price_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(58, 222, 204);" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2">
+                     <children>
+                        <Text layoutX="32.0" layoutY="110.0" rotate="270.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Fee Details" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(70, 159, 116);" stylesheets="@Style/mainwindow.css" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2">
+                     <children>
+                        <Text layoutX="23.0" layoutY="110.0" rotate="270.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Class Details" />
+                     </children>
+                  </Pane>
+                  <Button fx:id="add_class_btn" mnemonicParsing="false" onAction="#openAddClassForm" prefHeight="100.0" prefWidth="300.0" style="-fx-font-size: 15px; -fx-background-radius: 0; -fx-border-color: rgb(70, 159, 116); -fx-border-width: 3;" text="Add Class" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <graphic>
+                        <ImageView fitHeight="68.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/icons8_insert_table_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="veiw_salary_btn" mnemonicParsing="false" onAction="#openSetFee" prefHeight="100.0" prefWidth="300.0" style="-fx-font-size: 15px; -fx-background-radius: 0 0 100 0; -fx-border-color: rgb(70, 159, 116); -fx-border-width: 3; -fx-border-radius: 0 0 100 0;" text="Set Class Fee" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <graphic>
+                        <ImageView fitHeight="68.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/give_fee.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="insert_std_record_btn1" mnemonicParsing="false" onAction="#openSetSalary" prefHeight="121.0" prefWidth="266.0" style="-fx-font-size: 15px; -fx-background-radius: 0 0 0 50; -fx-border-color: rgb(216, 130, 32); -fx-border-width: 3; -fx-border-radius: 0 0 0 50;" text="Set Salary" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <graphic>
+                        <ImageView fitHeight="68.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/icons8_get_cash_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="insert_std_record_btn11" mnemonicParsing="false" onAction="#loadAddSubject" prefHeight="121.0" prefWidth="266.0" style="-fx-font-size: 15px; -fx-background-radius: 0 0 50 0; -fx-border-color: rgb(70, 159, 116); -fx-border-width: 3; -fx-border-radius: 0 0 50 0;" text="Add Subject" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/exame.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="insert_std_record_btn111" mnemonicParsing="false" onAction="#loadMarksDetails" prefHeight="121.0" prefWidth="266.0" style="-fx-font-size: 15px; -fx-background-radius: 50 0 0 0; -fx-border-color: rgb(70, 159, 116); -fx-border-width: 3; -fx-border-radius: 50 0 0 0;" text="Marks Sheet" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="68.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/icons8_numbers_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="insert_std_record_btn1111" mnemonicParsing="false" onAction="#loadSchoolName" prefHeight="121.0" prefWidth="266.0" style="-fx-font-size: 15px; -fx-background-radius: 0 50 0 0; -fx-border-color: rgb(70, 159, 116); -fx-border-width: 3; -fx-border-radius: 0 50 0 0;" text="School Name" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="68.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

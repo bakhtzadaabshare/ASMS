@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="608.0" prefWidth="1121.0" style="-fx-background-color: #FFFFFF;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstscenebuilderapplication.ClassesInfoController">
+    <stylesheets>
+        <URL value="@Style/classesinfo.css" />
+    </stylesheets>
+   <children>
+      <GridPane hgap="10.0" prefHeight="608.0" prefWidth="1121.0" vgap="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="77.0" minWidth="10.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="18.0" minWidth="1.0" prefWidth="1.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="383.0" minHeight="10.0" prefHeight="345.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="360.0" minHeight="10.0" prefHeight="141.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="360.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="360.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="360.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <LineChart fx:id="students_chart" prefHeight="260.0" prefWidth="414.0" title="Number of students in each class" GridPane.columnSpan="12">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total male and female students in each class" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Pane prefHeight="120.0" prefWidth="90.0" style="-fx-background-color: #DA291CFF;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <Pane layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #56A8CBFF;">
+                     <children>
+                        <Text fx:id="second_male" fill="#ff0202" layoutX="-2.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="43.0" layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #53A567FF;">
+                     <children>
+                        <Text fx:id="second_female" fill="#ff0202" layoutX="1.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Text fill="#f5f0f0" layoutX="10.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Second" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="second_tatal" fill="#f5f0f0" layoutX="-1.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="90.00000038743019">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="120.0" prefWidth="90.0" style="-fx-background-color: #DA291CFF;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <children>
+                  <Pane layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #56A8CBFF;">
+                     <children>
+                        <Text fx:id="third_male" fill="#ff0202" layoutX="-2.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="43.0" layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #53A567FF;">
+                     <children>
+                        <Text fx:id="third_female" fill="#ff0202" layoutX="1.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Text fill="#f5f0f0" layoutX="21.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Third" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="third_total" fill="#f5f0f0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="90.00000038743019">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="120.0" prefWidth="90.0" style="-fx-background-color: #DA291CFF;" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <children>
+                  <Pane layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #56A8CBFF;">
+                     <children>
+                        <Text fx:id="fourth_male" fill="#ff0202" layoutX="-2.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="44.0" layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #53A567FF;">
+                     <children>
+                        <Text fx:id="fourth_female" fill="#ff0202" layoutX="1.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Text fill="#f5f0f0" layoutX="14.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fourth" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="fourth_total" fill="#f5f0f0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="90.00000038743019">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="120.0" prefWidth="90.0" style="-fx-background-color: #DA291CFF;" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <children>
+                  <Pane layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #56A8CBFF;">
+                     <children>
+                        <Text fx:id="fifth_male" fill="#ff0202" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="44.0" layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #53A567FF;">
+                     <children>
+                        <Text fx:id="fifth_female" fill="#ff0202" layoutX="1.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Text fill="#f5f0f0" layoutX="23.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fifth" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="fifth_total" fill="#f5f0f0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="90.00000038743019">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="120.0" prefWidth="90.0" style="-fx-background-color: #DA291CFF;" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <children>
+                  <Pane layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #56A8CBFF;">
+                     <children>
+                        <Text fx:id="sixth_male" fill="#ff0202" layoutX="-2.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="44.0" layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #53A567FF;">
+                     <children>
+                        <Text fx:id="sixth_female" fill="#ff0202" layoutX="1.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Text fill="#f5f0f0" layoutX="23.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sixth" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="sixth_total" fill="#f5f0f0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="90.00000038743019">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="120.0" prefWidth="90.0" style="-fx-background-color: #DA291CFF;" GridPane.columnIndex="8" GridPane.rowIndex="1">
+               <children>
+                  <Pane layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #56A8CBFF;">
+                     <children>
+                        <Text fx:id="seventh_male" fill="#ff0202" layoutX="1.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="44.0" layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #53A567FF;">
+                     <children>
+                        <Text fx:id="seventh_female" fill="#ff0202" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Text fill="#f5f0f0" layoutX="9.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seventh" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="seventh_total" fill="#f5f0f0" layoutX="1.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="90.00000038743019">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="120.0" prefWidth="90.0" style="-fx-background-color: #DA291CFF;" GridPane.columnIndex="9" GridPane.rowIndex="1">
+               <children>
+                  <Pane layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #56A8CBFF;">
+                     <children>
+                        <Text fx:id="eighth_male" fill="#ff0202" layoutX="-2.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="44.0" layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #53A567FF;">
+                     <children>
+                        <Text fx:id="eight_female" fill="#ff0202" layoutX="-2.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Text fill="#f5f0f0" layoutX="16.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eighth" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="eighth_total" fill="#f5f0f0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="90.00000038743019">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="120.0" prefWidth="90.0" style="-fx-background-color: #DA291CFF;" GridPane.columnIndex="10" GridPane.rowIndex="1">
+               <children>
+                  <Pane layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #56A8CBFF;">
+                     <children>
+                        <Text fx:id="nineth_male" fill="#ff0202" layoutX="-2.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="44.0" layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #53A567FF;">
+                     <children>
+                        <Text fx:id="nineth_female" fill="#ff0202" layoutX="-2.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Text fill="#f5f0f0" layoutX="14.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nineth" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="nineth_total" fill="#f5f0f0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="90.00000038743019">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="120.0" prefWidth="90.0" style="-fx-background-color: #DA291CFF;" GridPane.columnIndex="11" GridPane.rowIndex="1">
+               <children>
+                  <Pane layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #56A8CBFF;">
+                     <children>
+                        <Text fx:id="tenth_male" fill="#ff0202" layoutX="-2.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="44.0" layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #53A567FF;">
+                     <children>
+                        <Text fx:id="tenth_female" fill="#ff0202" layoutX="-2.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="48.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Text fill="#f5f0f0" layoutX="16.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tenth" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="tenth_total" fill="#f5f0f0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="90.00000038743019">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="30.0" prefWidth="46.0" style="-fx-background-color: #56A8CBFF;" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="3">
+               <children>
+                  <Text layoutX="35.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Male students" textAlignment="CENTER" wrappingWidth="111.39453029632568">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="30.0" prefWidth="45.0" style="-fx-background-color: #53A567FF;" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="3">
+               <children>
+                  <Text layoutX="35.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Female students" textAlignment="CENTER" wrappingWidth="111.39453029632568">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="120.0" prefWidth="90.0" style="-fx-background-color: #DA291CFF;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Text fill="#f5f0f0" layoutX="32.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KG" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="kg_total" fill="#f5f0f0" layoutX="1.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="90.00000038743019">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Label layoutY="35.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #56A8CBFF;">
+                     <graphic>
+                        <Text fx:id="kg_male" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="40.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </graphic>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="35.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #53A567FF;">
+                     <graphic>
+                        <Text fx:id="kg_female" fill="#f80000" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="36.394530296325684">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </graphic>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="120.0" prefWidth="90.0" style="-fx-background-color: #DA291CFF;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Pane layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #56A8CBFF;">
+                     <children>
+                        <Text fx:id="first_male" fill="#ff0404" layoutX="-1.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="45.500007063150406">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="43.0" layoutY="34.0" prefHeight="50.0" prefWidth="44.0" style="-fx-background-color: #53A567FF;">
+                     <children>
+                        <Text fx:id="first_female" fill="#ff0202" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="43.574219941714546">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Text fill="#f5f0f0" layoutX="24.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First" textAlignment="CENTER" wrappingWidth="48.394534677267075">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="first_total" fill="#f5f0f0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="90.00000038743019">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

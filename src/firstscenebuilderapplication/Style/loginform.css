@@ -1,0 +1,17 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#imageView {
+    -fx-background-image: url("../Icons/school3.jpg");
+    -fx-background-size: stretch;
+     
+}
+.button {
+    -fx-background-color:  #00539CFF;
+    -fx-background-radius: 0px;
+}
+.button:hover {
+   -fx-background-color: #0063B2FF;
+   -fx-cursor: hand;
+}

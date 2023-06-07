@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="614.0" prefWidth="973.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstscenebuilderapplication.LoginFormController">
+    <stylesheets>
+        <URL value="@/firstscenebuilderapplication/Style/loginform.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="register_window" layoutX="523.0" prefHeight="596.0" prefWidth="429.0" style="-fx-background-color: #00203FFF; -fx-background-radius: 0;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="existed_user" layoutX="60.0" layoutY="230.0" prefHeight="25.0" prefWidth="317.0" promptText="Enter name of existed user" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="7.0" left="40.0" right="7.0" top="7.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="new_user" layoutX="61.0" layoutY="297.0" prefHeight="25.0" prefWidth="317.0" promptText="Enter user name" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="7.0" left="40.0" right="7.0" top="7.0" />
+               </padding>
+            </TextField>
+            <PasswordField fx:id="enter_password" layoutX="61.0" layoutY="368.0" prefHeight="25.0" prefWidth="317.0" promptText="Enter password" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.0" left="40.0" right="7.0" top="7.0" />
+               </padding>
+            </PasswordField>
+            <PasswordField fx:id="re_enter_password" layoutX="60.0" layoutY="441.0" prefHeight="25.0" prefWidth="317.0" promptText="Re-enter password" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.0" left="40.0" right="7.0" top="7.0" />
+               </padding>
+            </PasswordField>
+            <Button fx:id="sign_up" layoutX="56.0" layoutY="500.0" mnemonicParsing="false" onAction="#registerUser" prefHeight="41.0" prefWidth="317.0" style="-fx-background-radius: 20px;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/icons8_registered_trademark_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="137.0" fitWidth="189.0" layoutX="138.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/icons8_male_user_96px.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fffefe" layoutX="168.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="65.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/icons8_email_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="65.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/icons8_password_48px.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fffefe" layoutX="72.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter user name" wrappingWidth="149.0244140625">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#fffefe" layoutX="72.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter password" wrappingWidth="149.0244140625">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="64.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/icons8_password_48px.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fffefe" layoutX="72.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Re-enter password" wrappingWidth="149.0244140625">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#fffefe" layoutX="75.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter name of existed user" wrappingWidth="191.0244140625">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="65.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/icons8_email_48px.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="show_message" fill="TOMATO" layoutX="66.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="301.13671875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="open_login" layoutX="56.0" layoutY="561.0" mnemonicParsing="false" onAction="#openLoginWindow" opacity="0.8" prefHeight="41.0" prefWidth="317.0" style="-fx-background-radius: 20;" text="Login" textFill="WHITE" AnchorPane.rightAnchor="56.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/icons8_login_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="login_window" layoutX="522.0" prefHeight="596.0" prefWidth="429.0" style="-fx-background-color: #00203FFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#fffefe" layoutX="174.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <TextField fx:id="user_name" layoutX="57.0" layoutY="268.0" prefHeight="25.0" prefWidth="317.0" promptText="Enter user name" style="-fx-background-radius: 20px;" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="55.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="7.0" left="40.0" right="7.0" top="7.0" />
+               </padding>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="57.0" layoutY="339.0" prefHeight="25.0" prefWidth="317.0" promptText="Enter password" style="-fx-background-radius: 20px;" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="55.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.0" left="40.0" right="7.0" top="7.0" />
+               </padding>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </PasswordField>
+            <Button defaultButton="true" layoutX="57.0" layoutY="403.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="41.0" prefWidth="317.0" style="-fx-background-radius: 20px;" text="Login" textFill="WHITE" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="55.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/icons8_login_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="61.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/icons8_email_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="61.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/icons8_password_48px.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fffefe" layoutX="68.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter user name" wrappingWidth="149.0244140625">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#fffefe" layoutX="68.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter password" wrappingWidth="149.0244140625">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="137.0" fitWidth="189.0" layoutX="146.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/icons8_male_user_96px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="register_btn" layoutX="59.0" layoutY="472.0" mnemonicParsing="false" onAction="#openRegisterWindow" opacity="0.8" prefHeight="41.0" prefWidth="317.0" style="-fx-background-radius: 0; -fx-background-radius: 20;" text="Register" textFill="WHITE" AnchorPane.rightAnchor="53.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/icons8_registered_trademark_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="imageView" prefHeight="614.0" prefWidth="544.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="429.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

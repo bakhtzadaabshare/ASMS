@@ -1,0 +1,26 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+
+#edit:hover {
+    -fx-background-color: mediumseagreen;
+}
+#deleteAll:hover, #delete:hover {
+    -fx-background-color: tomato;
+}
+.table-view .table-column{
+    -fx-alignment:center;
+}
+
+.table-view .table-cell{
+    -fx-font-size:14px; 
+}
+.table-row-cell:hover {
+    -fx-background-color:orange;
+}
+.table-view .column-header {
+    -fx-font-weight:bold;
+    -fx-font-size:14px; 
+}

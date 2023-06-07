@@ -1,0 +1,13 @@
+/*
+ * Empty Stylesheet file.
+ */
+.combo-box-popup .list-view {
+    -fx-font-size : 15px;
+}
+.combo-box .text {
+    -fx-font-size : 15px;
+}
+.button:hover {
+   -fx-background-color: dodgerblue;
+}
+

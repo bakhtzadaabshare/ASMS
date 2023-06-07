@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="648.0" prefWidth="1116.0" style="-fx-background-color: #ffffff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstscenebuilderapplication.UnpaidFeeController">
+    <stylesheets>
+        <URL value="@/firstscenebuilderapplication/Style/unpaidfee.css" />
+    </stylesheets>
+   <children>
+      <GridPane hgap="10.0" layoutX="14.0" layoutY="14.0" prefHeight="648.0" prefWidth="1116.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="114.0" prefWidth="773.0" style="-fx-background-color: #ffffff; -fx-border-color: blue; -fx-border-width: 2px;">
+               <children>
+                  <GridPane layoutX="10.0" layoutY="57.0" prefHeight="114.0" prefWidth="1088.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ComboBox fx:id="month" prefHeight="32.0" prefWidth="224.0" promptText="Select Month" style="-fx-background-radius: 20px;">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </ComboBox>
+                        <ComboBox fx:id="year" prefHeight="32.0" prefWidth="218.0" promptText="Select Year" style="-fx-background-radius: 20px;" GridPane.columnIndex="1">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </ComboBox>
+                        <Button fx:id="unpaid_fee_btn" mnemonicParsing="false" onAction="#unpaidFee" prefHeight="35.0" prefWidth="126.0" style="-fx-background-radius: 20px;" text="UnPaid Fee" GridPane.columnIndex="2">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/view_fee.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="remaining_fee_btn" mnemonicParsing="false" onAction="#remainingFee" prefHeight="35.0" prefWidth="153.0" style="-fx-background-radius: 20px;" text="Remaining Fee" GridPane.columnIndex="3">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/Remaining%20Salary.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="paid_fee_btn" mnemonicParsing="false" onAction="#feePaid" prefHeight="35.0" prefWidth="124.0" style="-fx-background-radius: 20px;" text="Paid Fee" GridPane.columnIndex="4">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/icons8_get_cash_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#printRecord" prefHeight="35.0" prefWidth="124.0" style="-fx-background-radius: 20px;" text="Print" GridPane.columnIndex="5">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/icons8_print_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="table_print" prefHeight="480.0" prefWidth="773.0" style="-fx-background-color: #ffffff; -fx-border-color: blue; -fx-border-width: 2px;" GridPane.rowIndex="1">
+               <children>
+                  <TableView fx:id="fee_table" layoutX="14.0" prefHeight="480.0" prefWidth="773.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="std_id_clm" prefWidth="63.0" text="Std Id" />
+                      <TableColumn fx:id="name_clm" prefWidth="175.0" text="Name" />
+                        <TableColumn fx:id="father_name_clm" prefWidth="180.0" text="Father Name" />
+                        <TableColumn fx:id="address_clm" prefWidth="165.0" text="Address" />
+                        <TableColumn fx:id="phone_number_clm" prefWidth="165.0" text="Phone Number" />
+                        <TableColumn fx:id="paid_fee_clm" prefWidth="111.0" text="Paid Fee" />
+                        <TableColumn fx:id="total_fee_clm" prefWidth="111.0" text="Total Fee" />
+                        <TableColumn fx:id="month_clm" prefWidth="111.0" text="Month" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </GridPane>
+   </children>
+</AnchorPane>

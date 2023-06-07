@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="675.0" prefWidth="657.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstscenebuilderapplication.SetStaffSalaryController">
+    <stylesheets>
+        <URL value="@/firstscenebuilderapplication/Style/setstaffsalary.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="675.0" prefWidth="657.0" style="-fx-background-color: #FFFFFF;" styleClass="mainFxmlClass" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <stylesheets>
+            <URL value="@Style/setfee.css" />
+         </stylesheets>
+         <children>
+            <Pane layoutX="14.0" layoutY="62.0" prefHeight="194.0" prefWidth="634.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20px; -fx-border-color: Blue; -fx-border-radius: 20px;">
+               <children>
+                  <Label layoutX="73.0" layoutY="8.0" prefHeight="17.0" prefWidth="202.0" text="Teacher Id">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="29.0" fitWidth="37.0" layoutX="36.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/Id.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="teacher_id" layoutX="30.0" layoutY="46.0" prefHeight="31.0" prefWidth="278.0" promptText="Enter Teacher Id" style="-fx-background-radius: 20px;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="salary" layoutX="31.0" layoutY="140.0" prefHeight="31.0" prefWidth="278.0" promptText="Salary" style="-fx-background-radius: 20px;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="68.0" layoutY="103.0" prefHeight="17.0" prefWidth="202.0" text="Salary">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="29.0" fitWidth="37.0" layoutX="31.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/give_salary.png" />
+                     </image>
+                  </ImageView>
+                  <VBox layoutX="370.0" layoutY="52.0" spacing="5.0" />
+                  <HBox layoutX="368.0" layoutY="88.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="save_btn" defaultButton="true" onAction="#insertSalary" prefHeight="35.0" prefWidth="109.0" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" text="Save">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/icons8_save_96px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="insert_btn" onAction="#updateSalary" prefHeight="35.0" prefWidth="109.0" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" text="Update">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icons/icons8_update_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <TableView fx:id="fee_details" layoutX="11.0" layoutY="272.0" onSort="#insertSalary" prefHeight="403.0" prefWidth="634.0" style="-fx-border-color: Blue;">
+               <columns>
+                  <TableColumn fx:id="id_col" prefWidth="51.0" text="Id" />
+                  <TableColumn fx:id="name_col" prefWidth="169.0" text="Name" />
+                  <TableColumn fx:id="father_name_col" prefWidth="158.0" text="Father Name" />
+                  <TableColumn fx:id="designation_col" prefWidth="131.0" text="Designation" />
+                  <TableColumn fx:id="salary_col" prefWidth="121.0" text="Salary" />
+               </columns>
+            </TableView>
+            <Text layoutX="274.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set Staff Salary">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

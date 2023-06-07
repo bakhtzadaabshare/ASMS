@@ -1,0 +1,6 @@
+
+.mainFxmlClass {
+    .button:hover {
+        background-color: dodgerblue;
+    }
+}

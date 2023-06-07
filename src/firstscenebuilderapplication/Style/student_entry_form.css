@@ -1,0 +1,11 @@
+
+.button:hover {
+    background-color: dodgerblue;
+}
+.combo-box-popup .list-view {
+    -fx-font-size : 15px;
+}
+.combo-box .text {
+    -fx-font-size : 15px;
+}
+

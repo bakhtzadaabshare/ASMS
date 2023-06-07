@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/MarksDetails.fxml</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/Style/mainwindow.css</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/TeacherDetialController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/AddClass.fxml</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/StudentInfoTable.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/FXMLDocumentController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/ModelTable.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/DeleteLogin.fxml</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/ExceptionHandling.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/SchoolName.fxml</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/AssignSubjectModelClass.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/LoginFormController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/TeacherEntryRecordController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/EditStudentInfoController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/AddSubjectController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/ViewTeacherSalaryController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/PayTeacherSalary.fxml</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/DeleteLoginController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/ClassesInfoController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/FeeDetialsController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/UnPiadTableClass.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/PromotionController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/PayPromotionFeeController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/EnterFeeController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/UnpaidFeeController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/EditStudentInfo.fxml</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/AddClassController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/AddSubjectModelClass.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/databaseconnection/MySQLConnection.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/PayTeacherSalaryController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/SchoolNameController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/StudentInfoController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/MarksDetailsController.java</file>
+            <file>file:/D:/SchoolManagementSystem/SchoolManagementSystem/src/firstscenebuilderapplication/Style/loginform.css</file>
+        </group>
+    </open-files>
+</project-private>

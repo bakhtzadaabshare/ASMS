@@ -1,0 +1,46 @@
+
+#dashboard_btn, #home_btn, #student_info, #classes_info, #fee_detials, #examination, #staff_detials, #paid_and_unpaid_fee, #setting, #admin{
+    -fx-background-color:  rgb(60, 60, 60);
+    -fx-alignment:BASELINE_LEFT;
+    -fx-font-weight: blod;
+    -fx-font-size: 15px;
+    -fx-text-fill:#ffffff;
+}
+#dashboard_btn:hover, #home_btn:hover, #student_info:hover, #classes_info:hover, #fee_detials:hover, #examination:hover, #staff_detials:hover, #paid_and_unpaid_fee:hover, #setting:hover, #admin:hover{
+    -fx-background-color:  DodgerBlue;
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-background-color:  DodgerBlue;
+    -fx-cursor: hand;
+}
+#total_fee_details .chart-title{
+    -fx-text-fill: Green;
+   -fx-font-size: 1.6em;
+}
+.axis {
+    -fx-font-size: 20px;    
+    -fx-tick-label-fill: black;
+    -fx-font-family: Tahoma;
+    -fx-font-weight: bold;
+    -fx-tick-length: 20;
+    -fx-minor-tick-length: 10;
+}
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+.axis-label {
+   -fx-text-fill: Green;
+   -fx-font-size: 15px;
+}
+.axis-text {
+    -fx-font-size: 15px;
+}
+.series0.chart-bar {
+    -fx-background-color: DodgerBlue;
+}
+.series1.chart-bar {
+    -fx-background-color: mediumseagreen;
+}
+.default-color0.chart-pie { -fx-pie-color: DodgerBlue; }
+.default-color1.chart-pie { -fx-pie-color: MediumSeaGreen; }

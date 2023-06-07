@@ -1,0 +1,25 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+#delete_btn:hover {
+    -fx-background-color: tomato;
+}
+#save_btn:hover, #insert_btn:hover {
+    -fx-background-color: DodgerBlue;
+}
+.table-view .table-column{
+    -fx-alignment:center;
+}
+
+.table-view .table-cell{
+    -fx-font-size:15px; 
+}
+.table-row-cell:hover {
+    -fx-background-color:orange;
+}
+.table-view .column-header {
+    -fx-font-weight:bold;
+    -fx-font-size:15px; 
+}

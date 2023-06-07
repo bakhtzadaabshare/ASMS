@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="523.0" prefWidth="445.0" styleClass=".root {    -fx-background-image: url(&quot;../Icons/back1.jpg&quot;);    -fx-background-size: cover;  }" stylesheets="@Style/loginform.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstscenebuilderapplication.DeleteLoginController">
+   <children>
+      <AnchorPane fx:id="login_window" layoutX="31.0" layoutY="26.0" opacity="0.8" prefHeight="471.0" prefWidth="380.0" style="-fx-background-color: #00203FFF; -fx-background-radius: 200px 10px 200px 10px;">
+         <children>
+            <TextField fx:id="user_name" layoutX="32.0" layoutY="147.0" prefHeight="25.0" prefWidth="317.0" promptText="Enter user name" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="7.0" left="40.0" right="7.0" top="7.0" />
+               </padding>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="32.0" layoutY="218.0" prefHeight="25.0" prefWidth="317.0" promptText="Enter password" style="-fx-background-radius: 20px;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.0" left="40.0" right="7.0" top="7.0" />
+               </padding>
+            </PasswordField>
+            <Button defaultButton="true" layoutX="31.0" layoutY="282.0" mnemonicParsing="false" onAction="#deleteLoginAction" prefHeight="35.0" prefWidth="317.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/icons8_login_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="32.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/icons8_email_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="32.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/icons8_password_48px.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fffefe" layoutX="68.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter user name" wrappingWidth="149.0244140625">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#fffefe" layoutX="68.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter password" wrappingWidth="149.0244140625">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#fffefe" layoutX="170.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="137.0" fitWidth="189.0" layoutX="308.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Icons/icons8_male_user_96px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

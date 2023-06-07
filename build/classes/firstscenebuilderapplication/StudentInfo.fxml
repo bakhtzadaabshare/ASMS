@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="675.0" prefWidth="1196.0" style="-fx-background-color: #FFFFFF;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstscenebuilderapplication.StudentInfoController">
+    <stylesheets>
+        <URL value="@/firstscenebuilderapplication/Style/studentinfo.css" />
+    </stylesheets>
+   <children>
+      <GridPane hgap="20.0" prefHeight="675.0" prefWidth="1196.0" vgap="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1112.0" minWidth="10.0" prefWidth="132.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1112.0" minWidth="10.0" prefWidth="217.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="249.0" minWidth="10.0" prefWidth="146.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="281.0" minWidth="10.0" prefWidth="144.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="282.0" minWidth="10.0" prefWidth="144.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="10.0" prefWidth="127.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="368.0" minWidth="10.0" prefWidth="167.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="368.0" minWidth="0.0" prefWidth="0.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="105.0" minHeight="0.0" prefHeight="24.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TableView fx:id="std_table" prefHeight="530.0" prefWidth="1196.0" GridPane.columnSpan="8" GridPane.rowIndex="4">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="39.999969482421875" text="ID" />
+                <TableColumn fx:id="name" prefWidth="146.99996948242188" text="Name" />
+                  <TableColumn fx:id="father_name" prefWidth="128.0" text="Father Name" />
+                  <TableColumn fx:id="father_nic" prefWidth="128.0" text="Father NIC" />
+                  <TableColumn fx:id="address" prefWidth="128.0" text="Address" />
+                  <TableColumn fx:id="dob" prefWidth="93.0" text="Date Of Birth" />
+                  <TableColumn fx:id="mobile" minWidth="0.0" prefWidth="134.0" text="Mobile Number" />
+                  <TableColumn fx:id="class_of_admission" prefWidth="108.0" text="Admited Class" />
+                  <TableColumn fx:id="date_of_admission" prefWidth="115.0" text="Admission Date" />
+                  <TableColumn fx:id="cast" prefWidth="84.0" text="Caste" />
+                  <TableColumn fx:id="class_of_study" prefWidth="90.0" text="Class" />
+              </columns>
+            </TableView>
+            <TextField fx:id="search_student" prefHeight="31.0" prefWidth="205.0" promptText="Search Student by Name" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search Student" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </Text>
+            <ImageView fitHeight="31.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@user.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Actions" textAlignment="CENTER" wrappingWidth="129.96240234375" GridPane.columnIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="deleteAll" mnemonicParsing="false" onAction="#deleteAllRecords" prefHeight="32.0" prefWidth="142.0" style="-fx-background-radius: 20px;" text="Delete All" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/icons8_delete_bin_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="delete" mnemonicParsing="false" onAction="#deleteSelectedRow" prefHeight="32.0" prefWidth="138.0" style="-fx-background-radius: 20px;" text="Delete" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/icons8_remove_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="edit" mnemonicParsing="false" onAction="#editRecord" prefHeight="32.0" prefWidth="138.0" style="-fx-background-radius: 20px;" text="Edit" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/icons8_edit_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label prefHeight="62.0" prefWidth="124.0" style="-fx-background-color: mediumSeaGreen; -fx-border-radius: 100; -fx-background-radius: 100; -fx-border-color: green; -fx-border-width: 3;" GridPane.columnIndex="5" GridPane.rowSpan="2">
+               <graphic>
+                  <Text fx:id="total_students" fill="#fcfcfc" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: White;" textAlignment="CENTER" wrappingWidth="117.00000095367432">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Text>
+               </graphic>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="124.0" style="-fx-background-color: SlateBlue;" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <graphic>
+                  <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Students" textAlignment="CENTER" wrappingWidth="119.99998164176941">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </graphic>
+            </Label>
+            <Button fx:id="refresh" mnemonicParsing="false" onAction="#refreshAction" prefHeight="32.0" prefWidth="138.0" style="-fx-background-radius: 20px;" text="Refresh" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/icons8_refresh_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="675.0" prefWidth="697.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firstscenebuilderapplication.TeacherEntryRecordController">
+    <stylesheets>
+        <URL value="@Style/teacherentryrecord.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="insert_teacher_record_form" prefHeight="675.0" prefWidth="706.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="teacher_id" layoutX="39.0" layoutY="98.0" prefHeight="34.0" prefWidth="138.0" promptText="Teacher Id" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" AnchorPane.leftAnchor="39.0" />
+            <TextField fx:id="teacher_name" layoutX="186.0" layoutY="98.0" prefHeight="34.0" prefWidth="329.0" promptText="Teacher Name" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" AnchorPane.leftAnchor="186.0" />
+            <TextField fx:id="teacher_father_name" layoutX="39.0" layoutY="198.0" prefHeight="34.0" prefWidth="314.0" promptText="Father Name" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" AnchorPane.leftAnchor="39.0" />
+            <TextField fx:id="teacher_nic" layoutX="361.0" layoutY="197.0" prefHeight="34.0" prefWidth="295.0" promptText="NIC Number" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" AnchorPane.rightAnchor="39.0" />
+            <TextField fx:id="designation" layoutX="39.0" layoutY="284.0" prefHeight="34.0" prefWidth="238.0" promptText="Designation" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" AnchorPane.leftAnchor="39.0" />
+            <TextField fx:id="teacher_address" layoutX="278.0" layoutY="284.0" prefHeight="34.0" prefWidth="372.0" promptText="Address" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" AnchorPane.rightAnchor="39.0" />
+            <TextField fx:id="teacher_cell" layoutX="40.0" layoutY="372.0" prefHeight="34.0" prefWidth="352.0" promptText="Cell Number" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" AnchorPane.leftAnchor="40.0" />
+            <TextField fx:id="teacher_dob" accessibleRole="DATE_PICKER" layoutX="400.0" layoutY="372.0" prefHeight="34.0" prefWidth="231.0" promptText="DOB e.g yyyy-mm-dd" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="39.0" />
+            <TextField fx:id="teacher_qualification" layoutX="40.0" layoutY="468.0" prefHeight="34.0" prefWidth="258.0" promptText="Qualification" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" />
+            <TextField fx:id="teacher_major" layoutX="278.0" layoutY="469.0" prefHeight="34.0" prefWidth="352.0" promptText="Speciality" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" AnchorPane.rightAnchor="39.0" />
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="46.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="46.0">
+               <image>
+                  <Image url="@Icons/icons8_numbers_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="46.0" layoutX="43.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="43.0">
+               <image>
+                  <Image url="@Icons/staff.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="46.0" layoutX="186.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="186.0">
+               <image>
+                  <Image url="@Icons/user_name.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="36.0" layoutX="46.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="46.0">
+               <image>
+                  <Image url="@Icons/icons8_categorize_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="46.0" layoutX="49.0" layoutY="511.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="49.0">
+               <image>
+                  <Image url="@Icons/students.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="46.0" layoutX="50.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0">
+               <image>
+                  <Image url="@Icons/icons8_cell_phone_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="36.0" layoutX="412.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/icons8_pay_date_96px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="101.0" layoutY="66.0" style="-fx-font-size: 15px;" text="Teacher Id" />
+            <Label layoutX="248.0" layoutY="65.0" style="-fx-font-size: 15px;" text="Name" />
+            <Label layoutX="102.0" layoutY="163.0" style="-fx-font-size: 15px;" text="Father Name" />
+            <ImageView fitHeight="47.0" fitWidth="46.0" layoutX="366.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/Id.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="426.0" layoutY="163.0" style="-fx-font-size: 15px;" text="NIC Number" />
+            <Label layoutX="102.0" layoutY="249.0" style="-fx-font-size: 15px;" text="Designation" />
+            <Label layoutX="458.0" layoutY="334.0" style="-fx-font-size: 15px;" text="Date of Birth" />
+            <Label layoutX="91.0" layoutY="334.0" style="-fx-font-size: 15px;" text="Cell Phone Number" />
+            <Label layoutX="100.0" layoutY="519.0" style="-fx-font-size: 15px;" text="Gender" />
+            <RadioButton fx:id="Male" layoutX="56.0" layoutY="556.0" mnemonicParsing="false" style="-fx-font-size: 15px;" text="Male">
+               <toggleGroup>
+                  <ToggleGroup fx:id="teacher_gender" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="Female" layoutX="241.0" layoutY="556.0" mnemonicParsing="false" style="-fx-font-size: 15px;" text="Female" toggleGroup="$teacher_gender" />
+            <RadioButton fx:id="Other" layoutX="423.0" layoutY="556.0" mnemonicParsing="false" style="-fx-font-size: 15px;" text="Other" toggleGroup="$teacher_gender" />
+            <ImageView fitHeight="34.0" fitWidth="46.0" layoutX="310.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/icons8_books_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="36.0" layoutX="47.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/icons8_graduation_cap_96px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="101.0" layoutY="428.0" style="-fx-font-size: 15px;" text="Qualification" />
+            <Label layoutX="353.0" layoutY="427.0" style="-fx-font-size: 15px;" text="Major" />
+            <ImageView fitHeight="46.0" fitWidth="36.0" layoutX="290.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/address.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="335.0" layoutY="250.0" style="-fx-font-size: 15px;" text="Address" />
+            <Button fx:id="teacher_form_save_btn" defaultButton="true" layoutX="219.0" layoutY="609.0" onAction="#savaDataIntoDatabase" prefHeight="35.0" prefWidth="109.0" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" text="Save">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/icons8_save_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="teacher_form_add_btn" layoutX="358.0" layoutY="609.0" onAction="#addNewRecord" prefHeight="35.0" prefWidth="109.0" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" text="Insert">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/icons8_add_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="choose_image" layoutX="549.0" layoutY="148.0" mnemonicParsing="false" onAction="#chooseImage" prefHeight="25.0" prefWidth="111.0" style="-fx-font-size: 15px; -fx-background-radius: 20px; -fx-border-radius: 20px;" text="Picture" />
+            <Text layoutX="241.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20px;" text="Enter Teacher Record" />
+            <Circle fx:id="teacher_image" fill="DODGERBLUE" layoutX="604.0" layoutY="80.0" radius="63.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: MediumSeaGreen;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Circle>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

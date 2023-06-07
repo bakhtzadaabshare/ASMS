@@ -1,0 +1,33 @@
+/*
+ * Empty Stylesheet file.
+ */
+#students_chart .chart-title{
+    -fx-text-fill: Green;
+   -fx-font-size: 1.6em;
+}
+.axis {
+    -fx-font-size: 20px;    
+    -fx-tick-label-fill: black;
+    -fx-font-family: Tahoma;
+    -fx-font-weight: bold;
+    -fx-tick-length: 20;
+    -fx-minor-tick-length: 10;
+}
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+.axis-label {
+   -fx-text-fill: Green;
+   -fx-font-size: 15px;
+}
+.axis-text {
+    -fx-font-size: 15px;
+}
+.series0.chart-bar {
+    -fx-background-color: DodgerBlue;
+}
+.series1.chart-bar {
+    -fx-background-color: mediumseagreen;
+}
+.default-color0.chart-pie { -fx-pie-color: DodgerBlue; }
+.default-color1.chart-pie { -fx-pie-color: MediumSeaGreen; }
